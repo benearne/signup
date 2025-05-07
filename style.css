@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 100%;
 }
 
 body {
@@ -24,13 +26,13 @@ body {
 }
 
 .header,
-.form,
+.form-container,
 .footer {
     padding-left: 30px;
     flex-grow: 1;
 }
 
-.form,
+.form-container,
 .footer {
     padding-top: 20px;
 }
@@ -40,13 +42,48 @@ body {
     z-index: 2;
 }
 
-.form {
+.form-container {
     background-color: white;
     box-shadow: 0 5px 5px rgb(76, 76, 76);;
     z-index: 3;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .footer {
     background-color: rgb(215, 215, 215);
     z-index: 1;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+    font-size: 1em;
+}
+
+input:focus {
+    box-shadow: 0 5px 5px rgb(76, 76, 76);
+}
+
+.submit:hover {
+    box-shadow: 0 5px 10px rgb(76, 76, 76);
+}
+
+.submit {
+    box-shadow: 0 5px 5px rgb(76, 76, 76);
+    border: 0;
+    border-radius: 7px;
+    background-color: #596D48;
+    color: white;
+    padding: 15px 32px;
 }
