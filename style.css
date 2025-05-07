@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url(/Users/Benedikt/repos/signup/background.jpg);
+    background-size: cover;
+    height: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header,
+.form,
+.footer {
+    padding-left: 30px;
+    flex-grow: 1;
+}
+
+.form,
+.footer {
+    padding-top: 20px;
+}
+
+.header {
+    background-color: rgb(215, 215, 215);
+    z-index: 2;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0 5px 5px rgb(76, 76, 76);;
+    z-index: 3;
+}
+
+.footer {
+    background-color: rgb(215, 215, 215);
+    z-index: 1;
+}
